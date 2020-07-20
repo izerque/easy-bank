@@ -2,16 +2,206 @@ body{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    width: 100%;
+    background-color: rgb(255, 255, 255); 
+
 }
 @media only screen and (max-width:400px){
     .main_container{
+        width: 100%;
+        max-width:375px ;
+        /* border: 1px solid red; */
         margin: 0px;
         padding: 0px; 
+        background-color: rgb(255, 255, 255); 
+        margin: 0px auto;
+
     }
-    .header_container{
-        display: flex;
-        justify-content: center;
-        
     
+    .nav_container{
+        display: flex;
+        /* width:100%; */
+        align-items: center;
+        justify-content:space-between;
+        margin: 0px auto;
+        padding: 5px 10px;
+        background-color: rgb(255, 255, 255); 
+
     }
+    .hum_button{
+        
+    }
+    .nav_list_container{
+        display: none;
+
+    }
+    .button_container{
+        display: none;
+    }
+    .phone_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .info_section{
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .info_section_images{
+        margin-top: 20px;
+        background-image: url(./images/bg-intro-mobile.svg);
+        background-size:80%;
+        background-repeat: no-repeat;
+    }
+    .phone_image{
+        height:350px;
+        background-image: url(./images/image-mockups.png);
+        background-size: 105%;
+        background-position:bottom;
+        background-repeat: no-repeat;
+       /* border: 1px solid red ; */
+       width: 100%;
+    }
+    .info_section_header{
+        text-align: center;
+        font-size: 40px;
+        font-weight:400;
+        color:rgb(76, 76, 95);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* border: 1px solid red; */
+        margin: 0px;
+    }
+    .info_section_paragraph{
+        font-size: 17px;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight:normal;
+        color:rgb(92, 92, 134);
+
+    }
+    .button_container2{
+        
+    }
+    .button{
+        width:180px;
+        height: 50px;
+        background-image: linear-gradient(rgb(17, 218, 141),cyan);
+        border: 0px; 
+        border-radius: 50px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 100px;
+        margin-top: 20px;
+
+}
+
+  /* second section */
+  .second_section{
+    background-color: rgb(237, 237, 243);
+    margin: 0px;
+  }
+  .choice_container{
+      background-color: rgb(237, 237, 243);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 70px;
+      width: 100%;
+      
+  }
+  .choice_container_head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .choice_head{
+      margin: 0px;
+    text-align: center;
+    font-size: 38px;
+    font-weight:400;
+    color:rgb(76, 76, 95);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .choice_paragragh{
+    font-size: 17px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight:normal;
+    color:rgb(92, 92, 134);
+    margin-bottom: 60px;
+  }
+
+/* choice cards */
+.choice_options_container{
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+ .choice_card{
+     width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+ }
+ .choice_card_header{
+    margin: 0px;
+    text-align: center;
+    font-size:20px;
+    font-weight:400;
+    color:rgb(23, 23, 24);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .choice_card_paragragh{
+    font-size: 16.5px;
+    width: 95%;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight:normal;
+    color:rgb(92, 92, 134);
+ }
+
+ .Latest_articles_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(247, 244, 244, 0.644);
+ }
+ .articles_header{
+    /* margin: 0px; */
+    text-align: center;
+    font-size:40px;
+    font-weight:400;
+    color:rgb(76, 76, 95);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .articles_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .article{
+     /* border: 1px solid red; */
+     width:95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:10px auto;
+    align-items: center;
+    border-radius: 5px;
+ }
+ .article_image{
+     width: 100%;
+ }
+
 }

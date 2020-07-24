@@ -6,7 +6,7 @@ body{
     background-color: rgb(255, 255, 255); 
 
 }
-@media only screen and (max-width:400px){
+@media only screen and (max-width:374px){
     .main_container{
         width: 100%;
         max-width:375px ;
@@ -21,6 +21,7 @@ body{
     .nav_container{
         display: flex;
         /* width:100%; */
+        position: relative;
         align-items: center;
         justify-content:space-between;
         margin: 0px auto;
@@ -33,6 +34,50 @@ body{
     }
     .nav_list_container{
         display: none;
+
+    }
+    .active{
+        z-index: 1;
+        position: absolute;
+        top:80px;
+        left:15px;
+        width:90%;
+        height:250px;
+        margin: 0px auto;
+        background-color: white;
+        
+
+    }
+    .nav_list_li{
+        text-decoration: none;
+        /* border: 1px solid red ; */
+        margin:0px auto;
+        padding:10px;
+        /* width: 100%; */
+       
+        
+        
+    }
+    .nav_list{  
+        list-style: none;  
+        text-align: center;    
+        display:flex;       
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        /* border: 1px solid red ; */
+        margin:0px auto;
+        /* padding:50px; */
+    
+    
+     
+
+    }
+    .nav_list_li_a{
+        font-size:21px;
+        text-align: left;
+        color: rgba(58, 55, 55, 0.678);
+     
 
     }
     .button_container{
@@ -53,7 +98,7 @@ body{
     .info_section_images{
         margin-top: 20px;
         background-image: url(./images/bg-intro-mobile.svg);
-        background-size:80%;
+        background-size:100%;
         background-repeat: no-repeat;
     }
     .phone_image{
@@ -88,11 +133,11 @@ body{
     .button{
         width:180px;
         height: 50px;
-        background-image: linear-gradient(rgb(17, 218, 141),cyan);
+        background-image: linear-gradient(45deg,rgb(17, 218, 141),cyan);
         border: 0px; 
         border-radius: 50px;
         color: white;
-        font-size: 20px;
+        font-size:18px;
         font-weight: bold;
         margin-bottom: 100px;
         margin-top: 20px;
@@ -152,6 +197,9 @@ body{
     align-items: center;
     margin-bottom: 60px;
  }
+ .card_icon{
+     margin-bottom:10px;
+ }
  .choice_card_header{
     margin: 0px;
     text-align: center;
@@ -177,7 +225,8 @@ body{
     background-color: rgba(202, 198, 198, 0.644);
  }
  .articles_header{
-    /* margin: 0px; */
+    margin-top:60px;
+    margin-bottom: 12px;
     text-align: center;
     font-size:40px;
     font-weight:400;
@@ -189,6 +238,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
  }
  .article{
      /* border: 1px solid red; */
@@ -234,7 +284,7 @@ body{
  }
  .article_info_paragragh{
     margin-top:12px;
-    margin-bottom: 4px;
+    margin-bottom:15px;
     font-size: 14px;
     width: 95%;
     text-align:left;
